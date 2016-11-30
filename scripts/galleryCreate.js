@@ -14,7 +14,7 @@ mainContent.appendChild(gallerySection);
 
 var galleryContainer = document.getElementById("galleryContainer");
 gallerySection.appendChild(galleryContainer);
-var source = "https://sharpphotography.github.io/images/galleryPhotos/";
+var source = "https://sharpphotography.github.io/website/images/galleryPhotos/";
 var galleryType = document.getElementById("gallery_Type").innerHTML;
 var numPhotos = document.getElementById("baseImage").src.toString().slice(-6,-4);
 var numTabs = 5;
