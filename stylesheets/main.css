@@ -1,0 +1,269 @@
+html {
+  background-color:black;
+}
+body {
+ background-image: url("https://sharpphotography.github.io/website/images/background.JPG");
+ background-size: 200px 200px;
+}
+.jtTest {
+ background-image: url("https://sharpphotography.github.io/website/images/header.JPG");
+ min-height:250px;
+ background-position: center top;
+ background-size: cover;
+}
+.WTBS {
+ color:white;
+ text-shadow: 1px 1px 1px black;
+}
+.WTBS2 {
+ color:white;
+ text-shadow: 2px 2px 2px black;
+ letter-spacing: 2px;
+}
+.GTBS {
+ color:gray;
+ text-shadow: 1px 1px 1px black;
+}
+.italic {
+ font-style: italic;
+}
+.websitetitle {
+ margin-bottom:-30px;
+}
+a, a:hover{
+ text-decoration:none;
+ color:white;
+}
+.white {
+ background-color:white;
+}
+.red {
+ background-color:red;
+}
+.black {
+ background-color:black;
+}
+.gray {
+ background-color:gray;
+}
+.orange {
+ background-color:orange;
+}
+.blue {
+ background-color:blue;
+}
+.yellow {
+ background-color:yellow;
+}
+.green {
+ background-color:green;
+}
+.lime {
+ background-color:lime;
+}
+.purple {
+ background-color:purple;
+}
+.gradient {
+ background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+}
+.orangeGradient {
+ background: linear-gradient(rgba(255,165,0,0.8), rgba(230,149,0,0.8));
+}
+.transparentGrey {
+ background-color: rgba(0,0,0,0.5);
+}
+.darkGrey {
+  background-color:#1a1a1a;
+}
+.headertab {
+ margin-top:30px;
+}
+.orangeGradient:hover, .activeTab {
+ background: linear-gradient(rgba(255,165,0,1), rgba(230,149,0,1));
+ /*border-bottom: 5px solid yellow;
+ margin-bottom:-5px;*/
+}
+.gallerybox {
+ margin-top:5px;
+ margin-bottom:5px;
+ min-height:100px;
+}
+.gallerybox:hover {
+ box-shadow: 5px 5px 5px #404040;
+}
+.thumbnailContainer {
+ width:90px;
+ height:90px;
+ overflow: hidden;
+}
+.gallerythumbnail {
+ width:90px;
+ height:90px;
+ float:left;
+ margin:5px;
+ margin-right:10px;
+ margin-left:-10px;
+ overflow: hidden;
+ list-style-type:none;
+}
+.gallerythumbnail li {
+ margin-left:-50px;
+}
+.gallerythumbnail li img {
+ height:90px;
+}
+.gallerytitle {
+ margin-top:40px;
+}
+.gallery {
+ padding-bottom:15px;
+}
+.homepagedetails {
+ padding-top:20px;
+}
+.sectiontitle {
+ border-bottom: 5px solid orange;
+ box-shadow: 0px 5px 5px #404040;
+}
+.AboutUs {
+ min-height: 201px;
+ margin-bottom:15px;
+}
+.Contact {
+ min-height: 420px;
+ margin-bottom:15px;
+}
+.News {
+ min-height: 420px;
+ margin-bottom:15px;
+}
+.subsection {
+ margin-top:-10px;
+ height:85%;
+}
+.subsection p {
+ padding-top:5px;
+}
+.subBlock {
+ /*height: 30%;*/
+ margin-top: 3%;
+}
+.DarkOnHover:hover {
+ background-color: rgba(0,0,0,0.6);
+}
+.subBlockTitle {
+ border-bottom: 2px solid white;
+ box-shadow: 0px 2px 2px black;
+ padding-bottom: 1px;
+}
+.subBlock p {
+ margin-top:-10px;
+}
+.FloatLeft {
+ float: left;
+}
+.FloatRight {
+ float: right;
+}
+.fullHeight {
+ height:100%;
+}
+.footer {
+ /*margin-top:25px;*/
+ height:200px;
+ background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1));
+}
+.galleryContainer {
+  margin-left: 40px;
+}
+.imageContainer {
+  margin-top:12px;
+  margin-bottom:12px;
+  margin-right:12px;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 5px solid #737373;
+  border-bottom: 5px solid #cccccc;
+  border-left: 5px solid #666666;
+  border-right: 5px solid #b3b3b3;
+  box-shadow: 5px 5px 5px #1a1a1a;
+  overflow: hidden;
+}
+.imageContainerLeftMargin {
+  margin-left:12px;
+}
+.image {
+  margin-left:-35%;
+}
+.activeImage {
+  position:absolute;
+  z-index: 2;
+  left:-15%;
+  top:-25%;
+  width:90%;
+  height:auto;
+}
+.greyBox {
+  background-color:rgba(0,0,0,0.8);
+    position:fixed;
+    z-index: 1;
+    left:-10%;
+    top:-10%;
+    width:1000%;
+    height:1000%;
+}
+.newsTabs {
+  padding:10px;
+}
+.newsBlock {
+  border: 2px solid white;
+  overflow: hidden;
+  margin-top: 3%;
+}
+.newsBlockHeight {
+  max-height:75px;
+}
+input {
+  background-color:rgba(0,0,0,0.8);
+  width:180px;
+  border:0px;
+  font-size:15px;
+  padding:3px;
+  font-style:normal;
+  font-weight:normal;
+  border:1px solid rgba(0,0,0,0);
+}
+input:focus {
+  outline: none !important;
+  border: 1px solid orange;
+}
+button {
+  background-color:rgba(0,0,0,0.4);
+  border:0px;
+  margin-top:10px;
+  border:1px solid rgba(0,0,0,0);
+}
+button:focus {
+  outline: none !important;
+  border:1px solid orange;
+}
+.separator {
+  padding-left:30px;
+  padding-right:30px;
+}
+.hide {
+  display:none;
+}
+.contents {
+  margin-top:25px;
+  margin-bottom:25px;
+}
+.underline {
+  border-bottom:2px solid white;
+  padding:2px;
+}
+.footerText {
+  margin-top: 50px;
+}
