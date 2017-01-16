@@ -14,7 +14,7 @@ mainContent.appendChild(gallerySection);
 
 var galleryContainer = document.getElementById("galleryContainer");
 gallerySection.appendChild(galleryContainer);
-var source = "file:///Users/DEREK/Desktop/MadWireProject/images/galleryPhotos/";
+var source = "https://sharpphotography.github.io/website/images/galleryPhotos/";
 var galleryType = document.getElementById("gallery_Type").innerHTML;
 var numPhotos = document.getElementById("baseImage").src.toString().slice(-6,-4);
 var numTabs = 5;
@@ -40,19 +40,19 @@ function CreateGalleryTabs() {
     var thisH4Text = document.createTextNode("");
     if (i === 0) {
       thisH4Text.nodeValue = "Italian";
-      thisTabLink.href = "file:///Users/DEREK/Desktop/MadWireProject/galleries/italian.html";
+      thisTabLink.href = "https://sharpphotography.github.io/website/italianCars.html";
     } else if (i === 1) {
       thisH4Text.nodeValue = "German";
-      thisTabLink.href = "file:///Users/DEREK/Desktop/MadWireProject/galleries/german.html";
+      thisTabLink.href = "https://sharpphotography.github.io/website/germanCars.html";
     } else if (i === 2) {
       thisH4Text.nodeValue = "American";
-      thisTabLink.href = "file:///Users/DEREK/Desktop/MadWireProject/galleries/american.html";
+      thisTabLink.href = "https://sharpphotography.github.io/website/americanCars.html";
     } else if (i === 3) {
       thisH4Text.nodeValue = "Swedish";
-      thisTabLink.href = "file:///Users/DEREK/Desktop/MadWireProject/galleries/swedish.html";
+      thisTabLink.href = "https://sharpphotography.github.io/website/swedishCars.html";
     } else if (i === 4) {
       thisH4Text.nodeValue = "British";
-      thisTabLink.href = "file:///Users/DEREK/Desktop/MadWireProject/galleries/british.html";
+      thisTabLink.href = "https://sharpphotography.github.io/website/britishCars.html";
     }
     thisTabLink.appendChild(thisTabDiv);
     thisTabH4.appendChild(thisH4Text);
