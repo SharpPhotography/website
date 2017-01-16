@@ -91,7 +91,7 @@ function CreateHeaderTabs() {
    if (i === 0) {
      thisHeaderTab.style.position = "relative";
      thisH4Text.nodeValue = "GALLERIES";
-     thisHeaderLink.href="https://sharpphotography.github.io/website/italian.html";
+     thisHeaderLink.href="https://sharpphotography.github.io/website/italianCars.html";
    } else if (i === 1) {
      thisH4Text.nodeValue = "NEWS";
      thisHeaderLink.href="https://sharpphotography.github.io/website/news.html";
@@ -118,7 +118,7 @@ function CreateDropdownTabs () {
     itemH4.className = "WTBS FloatRight";
     var linkText = document.createTextNode("");
     if (i === 0) {
-      thisDdItemLink.href = "https://sharpphotography.github.io/website/italian.html";
+      thisDdItemLink.href = "https://sharpphotography.github.io/website/italianCars.html";
       linkText.nodeValue = "Galleries";
     } else if (i === 1) {
       thisDdItemLink.href = "https://sharpphotography.github.io/website/news.html";
@@ -157,23 +157,23 @@ function CreateHomePageTabs() {
     tabH4.className = "gallerytitle WTBS";
     var tabH4Text = document.createTextNode("");
     if (i === 0) {
-      tabLink.href = tabSource + "italian.html";
+      tabLink.href = tabSource + "italianCars.html";
       thumbImg.src = thumbSource + "Italian/ItalianCars_00.JPG";
       tabH4Text.nodeValue = "Italian";
     } else if (i === 1) {
-      tabLink.href = tabSource + "german.html";
+      tabLink.href = tabSource + "germanCars.html";
       thumbImg.src = thumbSource + "German/GermanCars_05.JPG";
       tabH4Text.nodeValue = "German";
     } else if (i === 2) {
-      tabLink.href = tabSource + "american.html";
+      tabLink.href = tabSource + "americanCars.html";
       thumbImg.src = thumbSource + "American/AmericanCars_03.JPG";
       tabH4Text.nodeValue = "American";
     } else if (i === 3) {
-      tabLink.href = tabSource + "swedish.html";
+      tabLink.href = tabSource + "swedishCars.html";
       thumbImg.src = thumbSource + "Swedish/SwedishCars_03.JPG";
       tabH4Text.nodeValue = "Swedish";
     } else if (i === 4) {
-      tabLink.href = tabSource + "british.html";
+      tabLink.href = tabSource + "britishCars.html";
       thumbImg.src = thumbSource + "British/BritishCars_10.JPG";
       tabH4Text.nodeValue = "British";
     }
@@ -199,7 +199,7 @@ function CreateFooterElements () {
       footerLink.href = "https://sharpphotography.github.io/website/index.html";
       footerText.nodeValue = "Home";
     } else if (i === 1) {
-      footerLink.href = "https://sharpphotography.github.io/website/italian.html";
+      footerLink.href = "https://sharpphotography.github.io/website/italianCars.html";
       footerText.nodeValue = "Galleries";
     } else if (i === 2) {
       footerLink.href = "https://sharpphotography.github.io/website/news.html";
