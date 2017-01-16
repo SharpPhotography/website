@@ -7,6 +7,14 @@ var $HeaderDiv = $(".headerdiv");
 var $About = $(".AboutUs");
 var $Contact = $(".Contact");
 var $News = $(".News");
+var $HeaderTabs = $("#headertabs");
+var $WebsiteTitle = $(".websitetitle");
+var $Title = $("#websiteTitle");
+var $HamSpan = $("#HamSpan");
+var $Jumbo = $(".jtTest");
+var $GallerySection = $("#galleryTabSection");
+var $FooterTabSection = $("#footerTabSection");
+var $SearchOptions = $("#searchOptions");
 function doSizing() {
   var $ImageContainer = $(".imageContainer");
   var $ImageLink = $(".imageLink");
@@ -22,19 +30,39 @@ function doSizing() {
     $HeaderDiv.css("margin-top", "-99px");
     $ImageContainer.addClass("imageContainerFunction");
     $ImageContainer.addClass("imageContainerLeftMargin");
+    $HeaderTabs.show();
+    $HamSpan.hide();
+    $WebsiteTitle.removeClass("orangeGradient");
+    $WebsiteTitle.addClass("text-center");
+    $WebsiteTitle.css("margin-top", "0px");
+    $Title.css("padding-bottom", "0px");
+    $Jumbo.css("min-height", "250px");
+    $GallerySection.show();
+    $FooterTabSection.show();
+    $SearchOptions.show();
     $ImageLink.click(function(e) {
       e.preventDefault();
     });
   } else if (screen.width <= 991) {
-    $H1.css("font-size", Math.floor((1/screen.width)*36000));
+    $H1.css("font-size", Math.floor((1/screen.width)*30000));
     $H3.css("font-size", Math.floor((1/screen.width)*24000));
     $H4.css("font-size", Math.floor((1/screen.width)*18000));
     $H5.css("font-size", Math.floor((1/screen.width)*14000));
     $P.css("font-size", Math.floor((1/screen.width)*14000));
-    var HeaderMargin = -1 *$HeaderDiv.height()-30;
+    var HeaderMargin = -1 * $HeaderDiv.height()-30;
     $HeaderDiv.css("margin-top", HeaderMargin);
     $ImageContainer.removeClass("imageContainerFunction");
     $ImageContainer.removeClass("imageContainerLeftMargin");
+    $WebsiteTitle.addClass("orangeGradient");
+    $WebsiteTitle.removeClass("text-center");
+    $WebsiteTitle.css("margin-top", -1 * $WebsiteTitle.height()+1);
+    $Title.css("padding-bottom", "4px");
+    $HeaderTabs.hide();
+    $HamSpan.show();
+    $GallerySection.hide();
+    $FooterTabSection.hide();
+    $SearchOptions.hide();
+    $Jumbo.css("min-height", "400px");
   }
   $(".image").css("height", $(".imageContainer").width()+40);
 }
