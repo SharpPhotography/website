@@ -44,11 +44,11 @@ function doSizing() {
       e.preventDefault();
     });
   } else if (screen.width <= 991) {
-    $H1.css("font-size", Math.floor((1/screen.width)*30000));
-    $H3.css("font-size", Math.floor((1/screen.width)*24000));
-    $H4.css("font-size", Math.floor((1/screen.width)*18000));
-    $H5.css("font-size", Math.floor((1/screen.width)*14000));
-    $P.css("font-size", Math.floor((1/screen.width)*14000));
+    $H1.css("font-size", Math.floor((1/screen.width)*26000));
+    $H3.css("font-size", Math.floor((1/screen.width)*20000));
+    $H4.css("font-size", Math.floor((1/screen.width)*14000));
+    $H5.css("font-size", Math.floor((1/screen.width)*12000));
+    $P.css("font-size", Math.floor((1/screen.width)*12000));
     var HeaderMargin = -1 * $HeaderDiv.height()-30;
     $HeaderDiv.css("margin-top", HeaderMargin);
     $ImageContainer.removeClass("imageContainerFunction");
