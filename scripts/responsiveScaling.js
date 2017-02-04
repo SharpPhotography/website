@@ -7,14 +7,17 @@ var $HeaderDiv = $(".headerdiv");
 var $About = $(".AboutUs");
 var $Contact = $(".Contact");
 var $News = $(".News");
-var $HeaderTabs = $("#headertabs");
 var $WebsiteTitle = $(".websitetitle");
 var $Title = $("#websiteTitle");
-var $HamSpan = $("#HamSpan");
 var $Jumbo = $(".jtTest");
-var $GallerySection = $("#galleryTabSection");
-var $FooterTabSection = $("#footerTabSection");
-var $SearchOptions = $("#searchOptions");
+var $TabItem = $(".tabItem");
+var $TabLink = $TabItem.parent();
+var $HeaderTabs = $("#headertabs");
+var $DropDownContainer = $("#dropdownContainer")
+var $DropDownRow = $("#DropDownRow");
+var $ShowOnSmall = $(".showOnSmall");
+var $HideOnSmall = $(".hideOnSmall");
+
 function doSizing() {
   var $ImageContainer = $(".imageContainer");
   var $ImageLink = $(".imageLink");
@@ -30,16 +33,19 @@ function doSizing() {
     $HeaderDiv.css("margin-top", "-99px");
     $ImageContainer.addClass("imageContainerFunction");
     $ImageContainer.addClass("imageContainerLeftMargin");
-    $HeaderTabs.show();
-    $HamSpan.hide();
     $WebsiteTitle.removeClass("orangeGradient");
     $WebsiteTitle.addClass("text-center");
     $WebsiteTitle.css("margin-top", "0px");
     $Title.css("padding-bottom", "0px");
     $Jumbo.css("min-height", "250px");
-    $GallerySection.show();
-    $FooterTabSection.show();
-    $SearchOptions.show();
+    $ShowOnSmall.hide();
+    $HideOnSmall.show();
+    if ($TabLink.parent().attr("id") !== "headerTabs") {
+      $TabItem.removeClass("col-xs-12 dropdownItem");
+      $TabItem.addClass("col-md-2 col-xs-3 orangeGradient headertab text-center");
+      $TabItem.children().removeClass("FloatRight");
+      $HeaderTabs.append($TabLink);
+    }
     $ImageLink.click(function(e) {
       e.preventDefault();
     });
@@ -57,11 +63,14 @@ function doSizing() {
     $WebsiteTitle.removeClass("text-center");
     $WebsiteTitle.css("margin-top", -1 * $WebsiteTitle.height()+1);
     $Title.css("padding-bottom", "4px");
-    $HeaderTabs.hide();
-    $HamSpan.show();
-    $GallerySection.hide();
-    $FooterTabSection.hide();
-    $SearchOptions.hide();
+    if ($TabLink.parent().attr("id") !== "DropDownRow") {
+      $TabItem.removeClass("col-md-2 col-xs-3 orangeGradient headertab text-center");
+      $TabItem.addClass("col-xs-12 dropdownItem");
+      $TabItem.children().addClass("FloatRight");
+      $DropDownRow.append($TabLink);
+    }
+    $ShowOnSmall.show();
+    $HideOnSmall.hide();
     $Jumbo.css("min-height", "400px");
   }
   $(".image").css("height", $(".imageContainer").width()+40);
