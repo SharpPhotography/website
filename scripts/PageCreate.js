@@ -133,7 +133,7 @@ function CreateHomePageTabs() {
       tabH4Text.nodeValue = "Italian";
     } else if (i === 1) {
       tabLink.href = tabSource + "german.html";
-      thumbImg.src = thumbSource + "Germain/GermanCars_05.JPG";
+      thumbImg.src = thumbSource + "German/GermanCars_05.JPG";
       tabH4Text.nodeValue = "German";
     } else if (i === 2) {
       tabLink.href = tabSource + "american.html";
