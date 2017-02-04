@@ -129,23 +129,23 @@ function CreateHomePageTabs() {
     var tabH4Text = document.createTextNode("");
     if (i === 0) {
       tabLink.href = tabSource + "italian.html";
-      thumbImg.src = thumbSource + "Italian/ItalianCars_00.JPG";
+      thumbImg.src = thumbSource + "ItalianCars_00.JPG";
       tabH4Text.nodeValue = "Italian";
     } else if (i === 1) {
       tabLink.href = tabSource + "german.html";
-      thumbImg.src = thumbSource + "German/GermanCars_05.JPG";
+      thumbImg.src = thumbSource + "GermanCars_05.JPG";
       tabH4Text.nodeValue = "German";
     } else if (i === 2) {
       tabLink.href = tabSource + "american.html";
-      thumbImg.src = thumbSource + "American/AmericanCars_03.JPG";
+      thumbImg.src = thumbSource + "AmericanCars_03.JPG";
       tabH4Text.nodeValue = "American";
     } else if (i === 3) {
       tabLink.href = tabSource + "swedish.html";
-      thumbImg.src = thumbSource + "Swedish/SwedishCars_03.JPG";
+      thumbImg.src = thumbSource + "SwedishCars_03.JPG";
       tabH4Text.nodeValue = "Swedish";
     } else if (i === 4) {
       tabLink.href = tabSource + "british.html";
-      thumbImg.src = thumbSource + "British/BritishCars_10.JPG";
+      thumbImg.src = thumbSource + "BritishCars_10.JPG";
       tabH4Text.nodeValue = "British";
     }
     galleryTabSection.appendChild(tabLink);
