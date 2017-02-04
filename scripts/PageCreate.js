@@ -9,7 +9,7 @@ headerDiv.className = "row headerdiv sectiontitle";
 var titleDiv = document.createElement("div");
 titleDiv.className = "col-md-4 col-xs-10 text-nowrap WTBS2 websitetitle headerSection";
 var WebsiteTitleLink = document.createElement("a");
-WebsiteTitleLink.href = "https://sharpphotography.github.io/index.html";
+WebsiteTitleLink.href = "https://sharpphotography.github.io/website/index.html";
 var WebsiteTitle = document.createElement("h1");
 WebsiteTitle.id = "websiteTitle";
 var WebsiteTitleText = document.createTextNode("Sharp Photography");
@@ -90,16 +90,16 @@ function CreateHeaderTabs() {
    var thisH4Text = document.createTextNode("");
    if (i === 0) {
      thisH4Text.nodeValue = "GALLERIES";
-     thisHeaderLink.href="https://sharpphotography.github.io/italianCars.html";
+     thisHeaderLink.href="https://sharpphotography.github.io/website/italianCars.html";
    } else if (i === 1) {
      thisH4Text.nodeValue = "NEWS";
-     thisHeaderLink.href="https://sharpphotography.github.io/news.html";
+     thisHeaderLink.href="https://sharpphotography.github.io/website/news.html";
    } else if (i === 2) {
      thisH4Text.nodeValue = "ABOUT";
-     thisHeaderLink.href="https://sharpphotography.github.io/about.html";
+     thisHeaderLink.href="https://sharpphotography.github.io/website/about.html";
    } else if (i === 3) {
      thisH4Text.nodeValue = "CONTACT";
-     thisHeaderLink.href="https://sharpphotography.github.io/contact.html";
+     thisHeaderLink.href="https://sharpphotography.github.io/website/contact.html";
    }
    thisHeaderLink.appendChild(thisHeaderTab);
    thisHeaderTab.appendChild(thisH4);
@@ -110,7 +110,7 @@ function CreateHeaderTabs() {
 
 var galleryTabSection = document.getElementById("galleryTabSection");
 var gallerytabNumber = 5;
-var tabSource = "https://sharpphotography.github.io/";
+var tabSource = "https://sharpphotography.github.io/website/";
 var thumbSource = "https://sharpphotography.github.io/website/images/galleryPhotos/";
 
 function CreateHomePageTabs() {
@@ -167,19 +167,19 @@ function CreateFooterElements () {
     var footerH5 = document.createElement("h5");
     var footerText = document.createTextNode("");
     if (i === 0) {
-      footerLink.href = "https://sharpphotography.github.io/index.html";
+      footerLink.href = "https://sharpphotography.github.io/website/index.html";
       footerText.nodeValue = "Home";
     } else if (i === 1) {
-      footerLink.href = "https://sharpphotography.github.io/italianCars.html";
+      footerLink.href = "https://sharpphotography.github.io/website/italianCars.html";
       footerText.nodeValue = "Galleries";
     } else if (i === 2) {
-      footerLink.href = "https://sharpphotography.github.io/news.html";
+      footerLink.href = "https://sharpphotography.github.io/website/news.html";
       footerText.nodeValue = "News";
     } else if (i === 3) {
-      footerLink.href = "https://sharpphotography.github.io/about.html";
+      footerLink.href = "https://sharpphotography.github.io/website/about.html";
       footerText.nodeValue = "About";
     } else if (i === 4) {
-      footerLink.href = "https://sharpphotography.github.io/contact.html";
+      footerLink.href = "https://sharpphotography.github.io/website/contact.html";
       footerText.nodeValue = "Contact";
     }
     footerLink.appendChild(footerH5);
